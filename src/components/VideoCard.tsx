@@ -2,7 +2,7 @@ import React from "react";
 
 export default function VideoCard(props: any) {
   return (
-    <div>
+    <div className="p-3 cursor-pointer">
       <img src={props.image} alt="none"></img>
       <div className="grid grid-cols-12 pl-4 pt-2">
         <div className="col-span-1">

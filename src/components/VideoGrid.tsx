@@ -38,7 +38,7 @@ const VIDEOS = [
 
 export default function VideoGrid() {
   return (
-  <div className="grid grid-4">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
   {
     VIDEOS.map((video,idx)=><div>
     <VideoCard
