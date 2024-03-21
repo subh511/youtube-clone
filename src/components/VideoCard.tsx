@@ -1,21 +1,20 @@
 import React from "react";
 
-export default function VideoCard() {
+export default function VideoCard(props:any) {
   return (
     <div>
-      <img src="/photo.jpg" />
+      <img src={props.image} alt="none"></img>
       <div className="grid grid-cols-12 pl-4 pt-2">
         <div className="col-span-1">
-          <img className="rounded-full w-10 h-10 " src="/photo.jpg" />
+          <img className="rounded-full w-10 h-10 " src={props.image} />
         </div>
         <div className="col-span-11 pl-2">
           <div>
-            Sita Kalyanam Lyric Video - Solo| Dulquer Salmaan, Neha Sharma,
-            Bejoy Nambiar| Trend Music
+            {props.title}
           </div>
-          <div className="col-span-11  text-gray-500 text-base">Samrat Doe</div>
-          <div className="col-span-11  text-gray-500 text-base">
-            45Mn views | 12 days ago
+          <div className="col-span-11  text-gray-400 text-base">{props.author}Samrat Doe</div>
+          <div className="col-span-11  text-gray-400 text-base">
+            {props.views}| {props.timestamp}
           </div>
         </div>
       </div>
