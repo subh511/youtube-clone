@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function VideoCard(props:any) {
+export default function VideoCard(props: any) {
   return (
     <div>
       <img src={props.image} alt="none"></img>
@@ -9,10 +9,10 @@ export default function VideoCard(props:any) {
           <img className="rounded-full w-10 h-10 " src={props.image} />
         </div>
         <div className="col-span-11 pl-2">
-          <div>
-            {props.title}
+          <div>{props.title}</div>
+          <div className="col-span-11  text-gray-400 text-base">
+            {props.author}
           </div>
-          <div className="col-span-11  text-gray-400 text-base">{props.author}Samrat Doe</div>
           <div className="col-span-11  text-gray-400 text-base">
             {props.views}| {props.timestamp}
           </div>
